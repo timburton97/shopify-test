@@ -88,9 +88,9 @@
                   </h2>
                 </a>
               </div>
-              {% if product.type == "snowboard" %}
+              {% if product.tags contains "testtag" %}
                 <h2>
-                  This is a test title to see if it appears
+                  testtag is enabled on this product
                 </h2>
               {% endif %}
             {%- when 'price' -%}
