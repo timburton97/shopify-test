@@ -197,6 +197,11 @@
                   </div>
                 </details>
               </div>
+
+              <p class="cart-attribute__field">
+                <label for="customisation">Customisation</label>
+                <input id="customisation" type="text" name="attributes[Customisation]" value="{{ cart.attributes["Customisation"] }}">
+              </p>
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
