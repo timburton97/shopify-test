@@ -88,6 +88,11 @@
                   </h2>
                 </a>
               </div>
+              {% if product.tags contains "testtag" %}
+                <h2>
+                  testtag is enabled on this product
+                </h2>
+              {% endif %}
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
