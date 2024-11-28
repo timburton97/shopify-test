@@ -88,9 +88,11 @@
                   </h2>
                 </a>
               </div>
-              <h2>
-                This is a test title to see if it appears
-              </h2>
+              {% if product.type == "snowboard" %}
+                <h2>
+                  This is a test title to see if it appears
+                </h2>
+              {% endif %}
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
