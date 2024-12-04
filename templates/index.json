@@ -1,5 +1,26 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "test_header_texAdK": {
+      "type": "test-header",
+      "custom_css": [],
+      "settings": {
+        "header-title-text": "Welcome to this Test Website",
+        "header-background-image": "shopify://shop_images/home-header-bg.png",
+        "header-button-text": "Our Full Range",
+        "header-button-background-color": "#d71414",
+        "header-button-text-color": "#ffffff",
+        "header-button-link": "shopify://products/the-collection-snowboard-hydrogen"
+      }
+    },
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b": {
       "type": "image-banner",
       "blocks": {
@@ -52,7 +73,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "<strong>Featured products</strong>",
+        "title": "",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -156,6 +177,7 @@
     }
   },
   "order": [
+    "test_header_texAdK",
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
     "featured_collection",
     "f1552b18-6017-4231-810d-74e61da22c37",
