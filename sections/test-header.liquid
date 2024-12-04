@@ -5,7 +5,7 @@
     }
 
     .test-header {
-        background-image: url("{{ section.settings.header-background-image | image_url: 'master' }}");
+        background-image: url("{{ section.settings.header-background-image | asset_url }}");
         background-size: cover;
         min-height: 70vh;
         width: 100%;
