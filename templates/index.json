@@ -13,7 +13,8 @@
       "type": "test-header",
       "custom_css": [],
       "settings": {
-        "header-title-text": "This can be changed in the default editor"
+        "header-title-text": "Welcome to this Test Website",
+        "header-background-image": "shopify://shop_images/home-header-bg.png"
       }
     },
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b": {
