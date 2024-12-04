@@ -2,19 +2,40 @@
   
     h1 {
         margin: 0px;
+        color: white;
+        text-align: center;
+        font-size: 64px;
     }
 
     .test-header {
-        background-image: url("{{ section.settings.header-background-image | image_url: width: 1920 }}");
+        background-image: url("{{ section.settings.header-background-image | image_url: width: 3840 }}");
         background-size: cover;
+        background-position: center;
         min-height: 70vh;
         width: 100%;
     }
 
+    .test-header-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .test-header-button {
+        background-color: {{ section.settings.header-button-background-color }};
+        color: {{ section.settings.header-button-text-color }};
+    }
+
 {% endstyle %}
 
-<div>
+<div class="test-header-inner">
+
     <h1>{{ section.settings.header-title-text }}</h1>
+
+    <a class="test-header-button" href="{{ section.settings.header-button-link }}">{{ section.settings.header-button-text }}</a>
+
 </div>
 
 {% schema %}
@@ -32,6 +53,29 @@
             "type": "image_picker",
             "id": "header-background-image",
             "label": "Header Background Image"
+        },
+        {
+            "type": "text",
+            "id": "header-button-text",
+            "default": "Click here for more...",
+            "label": "Header Button Text"
+        },
+        {
+            "type": "color",
+            "id": "header-button-background-color",
+            "label": "Button Background Colour",
+            "default": "#000000"
+        },
+        {
+            "type": "color",
+            "id": "header-button-text-color",
+            "label": "Button Text Colour",
+            "default": "#ffffff"
+        },
+        {
+            "type": "url",
+            "id": "header-button-link",
+            "label": "Button Link"
         }
     ],
     "presets": [
