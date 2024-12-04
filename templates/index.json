@@ -14,7 +14,11 @@
       "custom_css": [],
       "settings": {
         "header-title-text": "Welcome to this Test Website",
-        "header-background-image": "shopify://shop_images/home-header-bg.png"
+        "header-background-image": "shopify://shop_images/home-header-bg.png",
+        "header-button-text": "Our Full Range",
+        "header-button-background-color": "#d71414",
+        "header-button-text-color": "#ffffff",
+        "header-button-link": "shopify://products/the-collection-snowboard-hydrogen"
       }
     },
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b": {
