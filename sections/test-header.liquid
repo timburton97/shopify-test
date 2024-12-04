@@ -1,3 +1,24 @@
-<div class="test-header-class">
+{% style %}
+  
+    
+
+{% endstyle %}
+
+<div>
     <h1>This is a test header</h1>
 </div>
+
+{% schema %}
+{
+    "name": "Test Header",
+    "class": "test-header",
+    "settings": [
+        {
+            "type": "text",
+            "id": "header-title-text",
+            "default": "Welcome to Our Website",
+            "label": "Header Title"
+        }
+    ]
+}
+{% endschema %}
