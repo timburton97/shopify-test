@@ -1,6 +1,15 @@
 {% style %}
   
+    h1 {
+        margin: 0px;
+    }
 
+    .test-header {
+        background-image: url("{{ section.settings.header-background-image | image_url: 'master' }}");
+        background-size: cover;
+        min-height: 70vh;
+        width: 100%;
+    }
 
 {% endstyle %}
 
