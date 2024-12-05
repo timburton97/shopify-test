@@ -40,9 +40,19 @@
 
     <h1>{{ section.settings.header-title-text }}</h1>
 
-    <a class="test-header-button" href="{{ section.settings.header-button-link }}">{{ section.settings.header-button-text }}</a>
+    <!--<a class="test-header-button" href="{{ section.settings.header-button-link }}">{{ section.settings.header-button-text }}</a>-->
 
-    {% render 'tank2-button', text: {{ section.settings.header-button-text }}, link: {{ section.settings.header-button-link }}, background-color: {{ section.settings.header-button-background-color }}, text-color: {{ section.settings.header-button-text-color }} %}
+    {% assign tank_button_text = section.settings.header-button-link %}
+    {% assign tank_button_link = section.settings.header-button-link %}
+    {% assign tank_button_background_color = section.settings.header-button-background-color %}
+    {% assign tank_button_text_color = section.settings.header-button-text-color %}
+
+    {% render 'tank2-button',
+        text: tank_button_text,
+        link: tank_button_link,
+        background-color: tank_button_background_color,
+        text-color: tank_button_text_color
+    %}
 
 </div>
 
