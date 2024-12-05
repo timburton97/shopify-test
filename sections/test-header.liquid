@@ -1,11 +1,4 @@
 {% style %}
-  
-    h1 {
-        margin: 0px;
-        color: white;
-        text-align: center;
-        font-size: 64px;
-    }
 
     .test-header {
         display: flex;
@@ -25,6 +18,13 @@
         min-height: 100%;
     }
 
+    .test-header-title {
+        margin: 0px;
+        color: white;
+        text-align: center;
+        font-size: 64px;
+    }
+
     .test-header-button {
         background-color: {{ section.settings.header-button-background-color }};
         color: {{ section.settings.header-button-text-color }};
@@ -40,9 +40,9 @@
 
     {% for block in section.blocks %}
         {% case block.type %}
-            
+
             {%- when 'heading' -%}
-                <h2>{{ block.settings.heading }}</h2>
+                <h2 class="test-header-title">{{ block.settings.heading }}</h2>
 
         {% endcase %}
     {% endfor %}
