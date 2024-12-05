@@ -11,6 +11,17 @@
   "sections": {
     "test_header_texAdK": {
       "type": "test-header",
+      "blocks": {
+        "heading_mJYw9E": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to this Test Website"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mJYw9E"
+      ],
       "custom_css": [],
       "settings": {
         "header-title-text": "Welcome to this Test Website",
