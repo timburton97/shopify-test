@@ -42,6 +42,8 @@
 
     <a class="test-header-button" href="{{ section.settings.header-button-link }}">{{ section.settings.header-button-text }}</a>
 
+    {% render 'tank2-button', text: {{ section.settings.header-button-text }}, link: {{ section.settings.header-button-link }}, background-color: {{ section.settings.header-button-background-color }}, text-color: {{ section.settings.header-button-text-color }} %}
+
 </div>
 
 {% schema %}
