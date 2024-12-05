@@ -38,7 +38,16 @@
 
 <div class="test-header-inner">
 
-    <h1>{{ section.settings.header-title-text }}</h1>
+    {% for block in section.blocks %}
+        {% case block.type %}
+            
+            {%- when 'heading' -%}
+                <h2>{{ block.settings.heading }}</h2>
+
+        {% endcase %}
+    {% endfor %}
+
+    <!--<h1>{{ section.settings.header-title-text }}</h1>-->
 
     <!--<a class="test-header-button" href="{{ section.settings.header-button-link }}">{{ section.settings.header-button-text }}</a>-->
 
@@ -94,6 +103,21 @@
             "type": "url",
             "id": "header-button-link",
             "label": "Button Link"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Header",
+            "type": "heading",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "inline_richtext",
+                    "id": "heading",
+                    "default": "Test header title",
+                    "label": "Header title"
+                }
+            ]
         }
     ],
     "presets": [
